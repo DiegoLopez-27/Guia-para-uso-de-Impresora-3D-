@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía Impresora 3D</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Guía de Uso Impresora 3D</h1>
+
+<div id="inicio">
+
+<h2>Seleccione su tipo de usuario</h2>
+
+<div class="menu">
+
+<div class="card" onclick="mostrarEstudiante()">
+<h2>👨‍🎓</h2>
+<p>Estudiante</p>
+</div>
+
+<div class="card" onclick="mostrarDocente()">
+<h2>👨‍🏫</h2>
+<p>Docente</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="estudiante" class="oculto">
+
+<h2>¿Cómo deseas imprimir?</h2>
+
+<div class="menu">
+
+<div class="card" onclick="mostrarUSB()">
+<h2>🔌</h2>
+<p>Imprimir con USB</p>
+</div>
+
+<div class="card" onclick="mostrarWIFI()">
+<h2>📶</h2>
+<p>Imprimir por WiFi</p>
+</div>
+
+</div>
+
+<br><br>
+
+<button onclick="volverInicio()">Volver</button>
+
+</div>
+
+
+<div id="usb" class="oculto">
+
+<h2>Impresión usando USB</h2>
+
+<ol>
+<li>Abrir Orca FlashForge en la computadora</li>
+<img src="imagenes/ORCA FLASHFORGE.png" class="captura">
+
+<li>Abrir la pestaña de "Preparar"</li>
+<img src="imagenes/Paso 2.png" class="captura">
+
+<li>Configurar nuestra impresora</li>
+<img src="imagenes/Configurar.png" class="captura">
+
+<li>Seleccionar nuestro tipo de filamento</li>
+<img src="imagenes/seleccionar filamento.png" class="captura">
+
+<li>Seleccionar el archivo que queremos imprimir</li>
+<img src="imagenes/seleccionar documento.png" class="captura">
+
+<li>Debemos de elegir un archivo compatible</li>
+<img src="imagenes/elegir un archivo compatible.png" class="captura">
+
+<li>Diversas opciones </li>
+<img src="imagenes/opciones.png" class="captura">
+
+<li>Lamninar nuestra pieza</li>
+<img src="imagenes/Laminar.png" class="captura">
+
+<li>Tiempo de Impresión</li>
+<img src="imagenes/tiempo.png" class="captura">
+
+<li>Exportar Codigo G a nuestra usb</li>
+<img src="imagenes/Exportar gcode.png" class="captura">
+
+<li>Insertar USB en la impresora</li>
+
+<li>Seleccionar el archivo en la pantalla</li>
+
+
+<li>Presionar Start</li>
+</ol>
+
+<button onclick="volverEstudiante()">Volver</button>
+
+</div>
+
+
+<div id="wifi" class="oculto">
+
+<h2>Impresión por WiFi</h2>
+
+<ol>
+<li>Conectar la impresora a la red WiFi</li>
+<li>Abrir Orca FlashForge</li>
+<li>Detectar la impresora en la red</li>
+<li>Preparar modelo</li>
+<li>Presionar "Send to Printer"</li>
+</ol>
+
+<button onclick="volverEstudiante()">Volver</button>
+
+</div>
+
+
+<div id="docente" class="oculto">
+
+<h2>Mantenimiento Básico</h2>
+
+<ul>
+<li>Limpieza de la cama con alcohol</li>
+<li>Revisar boquilla</li>
+<li>Cambio de filamento</li>
+<li>Verificar ventiladores</li>
+</ul>
+
+<button onclick="volverInicio()">Volver</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

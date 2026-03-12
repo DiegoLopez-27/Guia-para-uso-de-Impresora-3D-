@@ -1,0 +1,111 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+margin:0;
+text-align:center;
+color:white;
+}
+
+.container{
+padding:40px;
+max-width:900px;
+margin:auto;
+}
+
+h1{
+margin-bottom:40px;
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:white;
+color:black;
+padding:30px;
+width:200px;
+border-radius:15px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+cursor:pointer;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+button{
+padding:12px 25px;
+margin-top:20px;
+border:none;
+border-radius:8px;
+background:#00aaff;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#008ecc;
+}
+
+.oculto{
+display:none;
+}
+
+ol{
+text-align:left;
+max-width:500px;
+margin:auto;
+}
+
+ul{
+text-align:left;
+max-width:500px;
+margin:auto;
+}
+
+img{
+max-width:300px;
+margin-top:20px;
+border-radius:10px;
+box-shadow:0px 5px 10px rgba(0,0,0,0.3);
+}
+
+.captura{
+    width:100%;
+    max-width:900px;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0px 10px 20px rgba(0,0,0,0.4);
+}
+
+.captura:hover{
+    transform:scale(1.03);
+}
+
+@media (max-width:600px){
+
+    body{
+        padding:15px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    li{
+        font-size:18px;
+    }
+
+    .captura{
+        width:100%;
+        margin-top:15px;
+    }
+
+}
